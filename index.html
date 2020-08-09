@@ -171,7 +171,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/08/09/%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2020/08/09/%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/" class="post-title-link" itemprop="url">双机调试</a>
         </h2>
 
         <div class="post-meta">
@@ -182,7 +182,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:10:39" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
+              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:16:54" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
             </span>
 
           
@@ -196,10 +196,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <center><font face="宋体"  size=15>双机调试</font></center>
-### 环境:win7(物理机)+xp sp3(虚拟机vm10)
+          <center><font face="宋体"  size=15>双机调试</font></center>   
 
-<h4 id="采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"><a href="#采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示" class="headerlink" title="采坑1.在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"></a>采坑1.<strong>在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示</strong></h4><p><img src="../images/01.png" alt="替代文字"></p>
+<h3 id="环境-win7-物理机-xp-sp3-虚拟机vm10"><a href="#环境-win7-物理机-xp-sp3-虚拟机vm10" class="headerlink" title="环境:win7(物理机)+xp sp3(虚拟机vm10)"></a>环境:win7(物理机)+xp sp3(虚拟机vm10)</h3><h4 id="采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"><a href="#采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示" class="headerlink" title="采坑1.在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"></a>采坑1.<strong>在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示</strong></h4><p><img src="../images/01.png" alt="替代文字"></p>
 <h6 id="如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1"><a href="#如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1" class="headerlink" title="如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1"></a>如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1</h6><h6 id="因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图"><a href="#因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图" class="headerlink" title="因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图"></a>因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图</h6><h4 id="采坑2-原先使用wdk7600发现没有符号。"><a href="#采坑2-原先使用wdk7600发现没有符号。" class="headerlink" title="采坑2.原先使用wdk7600发现没有符号。"></a>采坑2.原先使用wdk7600发现没有符号。</h4><h6 id="解决方案-下载sp3的符号包"><a href="#解决方案-下载sp3的符号包" class="headerlink" title="解决方案:下载sp3的符号包"></a>解决方案:下载sp3的符号包</h6><h6 id="Windbg-Symbols安装包（提取码：fvva）"><a href="#Windbg-Symbols安装包（提取码：fvva）" class="headerlink" title="Windbg+Symbols安装包（提取码：fvva）"></a><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18kXlY7WKhaE7S5VnSLR-1Q">Windbg+Symbols</a>安装包（提取码：fvva）</h6><h4 id="默认安装在C-Windows-Symbol"><a href="#默认安装在C-Windows-Symbol" class="headerlink" title="默认安装在C:\Windows\Symbol"></a>默认安装在C:\Windows\Symbol</h4><p><img src="../images/2.png" alt="替代文字"><br><img src="../images/3.png" alt="替代文字"></p>
 
       
@@ -245,7 +244,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:10:20" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
+              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:17:40" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
             </span>
 
           
@@ -259,7 +258,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="段寄存器属性探测"><a href="#段寄存器属性探测" class="headerlink" title="段寄存器属性探测"></a><center>段寄存器属性探测</center></h2><p><img src="../images/%E6%AE%B5%E7%BB%93%E6%9E%841.png" alt="替代文字"><br><img src="../images/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E8%AF%BB%E5%86%99.png" alt="替代文字"></p>
+          <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">title:</span>段寄存器属性探测</span><br></pre></td></tr></table></figure>
+
+<h2 id="段寄存器属性探测"><a href="#段寄存器属性探测" class="headerlink" title="段寄存器属性探测"></a><center>段寄存器属性探测</center></h2><p><img src="../images/%E6%AE%B5%E7%BB%93%E6%9E%841.png" alt="替代文字"><br><img src="../images/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E8%AF%BB%E5%86%99.png" alt="替代文字"></p>
 <h5 id="1-段寄存器只能看见16位，如何证明有96位？"><a href="#1-段寄存器只能看见16位，如何证明有96位？" class="headerlink" title="1.段寄存器只能看见16位，如何证明有96位？"></a>1.段寄存器只能看见16位，如何证明有96位？</h5><h5 id="2-写段寄存器时，只给了16位，剩下的80位填什么？"><a href="#2-写段寄存器时，只给了16位，剩下的80位填什么？" class="headerlink" title="2.写段寄存器时，只给了16位，剩下的80位填什么？"></a>2.写段寄存器时，只给了16位，剩下的80位填什么？</h5><p>为了解决上述问题，首先要了解段寄存器的成员<br><img src="../images/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E6%88%90%E5%91%98.png" alt="替代文字"></p>
 <h1 id="先来解决第一个问题"><a href="#先来解决第一个问题" class="headerlink" title="先来解决第一个问题"></a>先来解决第一个问题</h1><blockquote>
 <p>首先来探测Attribute</p>
