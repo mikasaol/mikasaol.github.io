@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -130,11 +131,38 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -153,6 +181,73 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="INT3">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="INT3">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/" class="post-title-link" itemprop="url">段寄存器属性探测</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-08-09 15:11:32 / 修改时间：15:18:43" itemprop="dateCreated datePublished" datetime="2020-08-09T15:11:32+08:00">2020-08-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/%E6%AE%B5%E7%BB%93%E6%9E%841.png" alt="替代文字"><br><img src="/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E8%AF%BB%E5%86%99.png" alt="替代文字"></p>
+<h5 id="1-段寄存器只能看见16位，如何证明有96位？"><a href="#1-段寄存器只能看见16位，如何证明有96位？" class="headerlink" title="1. 段寄存器只能看见16位，如何证明有96位？"></a>1. 段寄存器只能看见16位，如何证明有96位？</h5><h5 id="2-写段寄存器时，只给了16位，剩下的80位填什么？"><a href="#2-写段寄存器时，只给了16位，剩下的80位填什么？" class="headerlink" title="2. 写段寄存器时，只给了16位，剩下的80位填什么？"></a>2. 写段寄存器时，只给了16位，剩下的80位填什么？</h5>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -182,7 +277,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:16:54" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
+              <time title="创建时间：2020-08-09 15:11:32 / 修改时间：15:19:03" itemprop="dateCreated datePublished" datetime="2020-08-09T15:11:32+08:00">2020-08-09</time>
             </span>
 
           
@@ -196,100 +291,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <center><font face="宋体"  size=15>双机调试</font></center>   
-
-<h3 id="环境-win7-物理机-xp-sp3-虚拟机vm10"><a href="#环境-win7-物理机-xp-sp3-虚拟机vm10" class="headerlink" title="环境:win7(物理机)+xp sp3(虚拟机vm10)"></a>环境:win7(物理机)+xp sp3(虚拟机vm10)</h3><h4 id="采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"><a href="#采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示" class="headerlink" title="采坑1.在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"></a>采坑1.<strong>在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示</strong></h4><p><img src="../images/01.png" alt="替代文字"></p>
-<h6 id="如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1"><a href="#如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1" class="headerlink" title="如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1"></a>如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1</h6><h6 id="因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图"><a href="#因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图" class="headerlink" title="因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图"></a>因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图</h6><h4 id="采坑2-原先使用wdk7600发现没有符号。"><a href="#采坑2-原先使用wdk7600发现没有符号。" class="headerlink" title="采坑2.原先使用wdk7600发现没有符号。"></a>采坑2.原先使用wdk7600发现没有符号。</h4><h6 id="解决方案-下载sp3的符号包"><a href="#解决方案-下载sp3的符号包" class="headerlink" title="解决方案:下载sp3的符号包"></a>解决方案:下载sp3的符号包</h6><h6 id="Windbg-Symbols安装包（提取码：fvva）"><a href="#Windbg-Symbols安装包（提取码：fvva）" class="headerlink" title="Windbg+Symbols安装包（提取码：fvva）"></a><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18kXlY7WKhaE7S5VnSLR-1Q">Windbg+Symbols</a>安装包（提取码：fvva）</h6><h4 id="默认安装在C-Windows-Symbol"><a href="#默认安装在C-Windows-Symbol" class="headerlink" title="默认安装在C:\Windows\Symbol"></a>默认安装在C:\Windows\Symbol</h4><p><img src="../images/2.png" alt="替代文字"><br><img src="../images/3.png" alt="替代文字"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="INT3">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="INT3">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/09/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E5%B1%9E%E6%80%A7%E6%8E%A2%E6%B5%8B/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-09 13:59:30 / 修改时间：14:17:40" itemprop="dateCreated datePublished" datetime="2020-08-09T13:59:30+08:00">2020-08-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">title:</span>段寄存器属性探测</span><br></pre></td></tr></table></figure>
-
-<h2 id="段寄存器属性探测"><a href="#段寄存器属性探测" class="headerlink" title="段寄存器属性探测"></a><center>段寄存器属性探测</center></h2><p><img src="../images/%E6%AE%B5%E7%BB%93%E6%9E%841.png" alt="替代文字"><br><img src="../images/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E8%AF%BB%E5%86%99.png" alt="替代文字"></p>
-<h5 id="1-段寄存器只能看见16位，如何证明有96位？"><a href="#1-段寄存器只能看见16位，如何证明有96位？" class="headerlink" title="1.段寄存器只能看见16位，如何证明有96位？"></a>1.段寄存器只能看见16位，如何证明有96位？</h5><h5 id="2-写段寄存器时，只给了16位，剩下的80位填什么？"><a href="#2-写段寄存器时，只给了16位，剩下的80位填什么？" class="headerlink" title="2.写段寄存器时，只给了16位，剩下的80位填什么？"></a>2.写段寄存器时，只给了16位，剩下的80位填什么？</h5><p>为了解决上述问题，首先要了解段寄存器的成员<br><img src="../images/%E6%AE%B5%E5%AF%84%E5%AD%98%E5%99%A8%E6%88%90%E5%91%98.png" alt="替代文字"></p>
-<h1 id="先来解决第一个问题"><a href="#先来解决第一个问题" class="headerlink" title="先来解决第一个问题"></a>先来解决第一个问题</h1><blockquote>
-<p>首先来探测Attribute</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> var = <span class="number">0</span>;                    </span><br><span class="line">__asm                    </span><br><span class="line">&#123;                    </span><br><span class="line">    mov ax,ss  <span class="comment">//cs不行 cs是可读 可执行 但不可写    </span></span><br><span class="line">    mov ds,ax                </span><br><span class="line">    mov dword ptr ds:[var],eax                </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//把ss改成cs就无法访问了    </span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>接着探测Base</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> var = <span class="number">1</span>;                    </span><br><span class="line">__asm                    </span><br><span class="line">&#123;                    </span><br><span class="line">    mov ax,fs                </span><br><span class="line">    mov gs,ax                </span><br><span class="line">    mov eax,gs:[<span class="number">0</span>]    <span class="comment">//不要用DS 否则编译不过去        </span></span><br><span class="line">    mov dword ptr ds:[var],eax    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">//mov edx,dword ptr ds:[0x7FFDF000]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="在这里注意两个关键点"><a href="#在这里注意两个关键点" class="headerlink" title="在这里注意两个关键点:"></a>在这里注意两个关键点:</h4><p><font color=CadetBlue>1.不能在有关GS寄存器的地方下断点</fond><br><font color=CadetBlue>2.0地址为保留地址，是不能访问的</fond></p>
-<h4 id="理由-下断点单步调试需要不断进出0环，而GS是被windows废弃的寄存器，只要一进0环就会被清空，也就是说上面的赋值语句mov-gs-ax没有任何作用，因为你在mov-gs-ax下断点，导致GS进0环直接被清空了-GS里的值是空的-所以会导致0xC0000005"><a href="#理由-下断点单步调试需要不断进出0环，而GS是被windows废弃的寄存器，只要一进0环就会被清空，也就是说上面的赋值语句mov-gs-ax没有任何作用，因为你在mov-gs-ax下断点，导致GS进0环直接被清空了-GS里的值是空的-所以会导致0xC0000005" class="headerlink" title="理由:下断点单步调试需要不断进出0环，而GS是被windows废弃的寄存器，只要一进0环就会被清空，也就是说上面的赋值语句mov gs,ax没有任何作用，因为你在mov gs,ax下断点，导致GS进0环直接被清空了,GS里的值是空的,所以会导致0xC0000005"></a>理由:<font color=MediumSpringGreen>下断点单步调试需要不断进出0环，而GS是被windows废弃的寄存器，只要一进0环就会被清空，也就是说上面的赋值语句mov gs,ax没有任何作用，因为你在mov gs,ax下断点，导致GS进0环直接被清空了,GS里的值是空的,所以会导致0xC0000005</fond></h4><h4 id="解决-①别下断点，②别用GS寄存器"><a href="#解决-①别下断点，②别用GS寄存器" class="headerlink" title="解决:①别下断点，②别用GS寄存器"></a>解决:<font color=CadetBlue>①别下断点，②别用GS寄存器</fond></h4><blockquote>
-<p>继续探测Limit</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> var = <span class="number">1</span>;                    </span><br><span class="line">__asm                    </span><br><span class="line">&#123;                    </span><br><span class="line">    mov ax,fs                </span><br><span class="line">    mov gs,ax                </span><br><span class="line">    mov eax,gs:[<span class="number">0x1000</span>]    <span class="comment">//不要用DS 否则编译不过去        </span></span><br><span class="line">    mov dword ptr ds:[var],eax    </span><br><span class="line">&#125;    </span><br></pre></td></tr></table></figure>
-<h3 id="如果这里报错0xC0000005就说明了Limit的存在了。"><a href="#如果这里报错0xC0000005就说明了Limit的存在了。" class="headerlink" title="如果这里报错0xC0000005就说明了Limit的存在了。"></a>如果这里报错0xC0000005就说明了Limit的存在了。</h3><h4 id="为什么呢"><a href="#为什么呢" class="headerlink" title="为什么呢?"></a>为什么呢?</h4><p><font color=black>mov eax,gs:[0x1000] == mov eax,[gs.base+0x1000]<br>而gs=fs fs的limit限制是0xFFF,范围只能是0-0xFFF,这里加0x1000显然是会报错的</fond></p>
-<h1 id="第二个问题"><a href="#第二个问题" class="headerlink" title="第二个问题"></a>第二个问题</h1><h3 id="首先了解下段描述符与段选择子"><a href="#首先了解下段描述符与段选择子" class="headerlink" title="#首先了解下段描述符与段选择子"></a>#首先了解下段描述符与段选择子</h3><p><img src="../images/GDT%E5%92%8CLDT.png" alt="替代文字"><br><img src="../images/%E6%AE%B5%E6%8F%8F%E8%BF%B0%E7%AC%A6.png" alt="替代文字"><br><img src="../images/%E6%AE%B5%E9%80%89%E6%8B%A9%E5%AD%90.png" alt="替代文字"></p>
-<blockquote>
-<p>4、加载段描述符至段寄存器</p>
-</blockquote>
-<pre><code>    除了MOV指令，我们还可以使用LES、LSS、LDS、LFS、LGS指令修改寄存器.
-
-    CS不能通过上述的指令进行修改，CS为代码段，CS的改变会导致EIP的改变，要改CS，必须要保证CS与EIP一起改，后面会讲.
-    char buffer[6];                    
-    __asm                            
-    &#123;            
-        les ecx,fword ptr ds:[buffer] //高2个字节给es，低四个字节给ecx    
-    &#125;
-
-    注意：RPL&lt;=DPL(在数值上)</code></pre>
+          <h3 id="环境-win7-物理机-xp-sp3-虚拟机vm10"><a href="#环境-win7-物理机-xp-sp3-虚拟机vm10" class="headerlink" title="环境:win7(物理机)+xp sp3(虚拟机vm10)"></a>环境:win7(物理机)+xp sp3(虚拟机vm10)</h3><h4 id="采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"><a href="#采坑1-在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示" class="headerlink" title="采坑1.在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示"></a>采坑1.<strong>在虚拟机添加串口之前，请先检查是否有打印机，如果有请删除，否则你创建的串口将会如下图所示</strong></h4><p><img src="/2020/08/09/%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/01.png" alt="替代文字"></p>
+<h6 id="如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1"><a href="#如果是图上这种情况-你必须要在boot-ini的配置里填上com-2才行，而不是后面显示的-pipe-com-1" class="headerlink" title="如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1"></a>如果是图上这种情况  你必须要在boot.ini的配置里填上com_2才行，而不是后面显示的\pipe\com_1</h6><h6 id="因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图"><a href="#因此为了避免麻烦-建议创建虚拟机的时候就将打印机删除-并且添加串口，此时效果如下图" class="headerlink" title="因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图"></a>因此为了避免麻烦 建议创建虚拟机的时候就将打印机删除 并且添加串口，此时效果如下图</h6><h4 id="采坑2-原先使用wdk7600发现没有符号。"><a href="#采坑2-原先使用wdk7600发现没有符号。" class="headerlink" title="采坑2.原先使用wdk7600发现没有符号。"></a>采坑2.原先使用wdk7600发现没有符号。</h4><h6 id="解决方案-下载sp3的符号包"><a href="#解决方案-下载sp3的符号包" class="headerlink" title="解决方案:下载sp3的符号包"></a>解决方案:下载sp3的符号包</h6><h6 id="Windbg-Symbols安装包（提取码：fvva）"><a href="#Windbg-Symbols安装包（提取码：fvva）" class="headerlink" title="Windbg+Symbols安装包（提取码：fvva）"></a><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18kXlY7WKhaE7S5VnSLR-1Q">Windbg+Symbols</a>安装包（提取码：fvva）</h6><h4 id="默认安装在C-Windows-Symbol"><a href="#默认安装在C-Windows-Symbol" class="headerlink" title="默认安装在C:\Windows\Symbol"></a>默认安装在C:\Windows\Symbol</h4><p><img src="/2020/08/09/%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/2.png" alt="替代文字"><br><img src="/2020/08/09/%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/3.png" alt="替代文字"></p>
 
       
     </div>
@@ -514,6 +517,10 @@
 
 
 
+  
+<script src="/js/local-search.js"></script>
+
+
 
 
 
@@ -529,5 +536,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-hibiki"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
